@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteGroup]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testg(failed)">
+    <parameter name="bName" value="chrome"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestNg_Practice.TestNgGroupsDemo">
+        <methods>
+          <include name="MobileSelect"/>
+          <include name="mainTest"/>
+          <include name="Mobiles"/>
+        </methods>
+      </class> <!-- TestNg_Practice.TestNgGroupsDemo -->
+    </classes>
+  </test> <!-- Testg(failed) -->
+</suite> <!-- Failed suite [SuiteGroup] -->
